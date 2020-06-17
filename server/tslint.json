@@ -1,0 +1,187 @@
+{
+    "rules": {
+        "no-any": false,
+        "no-implicit-dependencies": [
+            true,
+            [
+                "@api"
+            ]
+        ],
+        "variable-name": {
+            "options": [
+                "ban-keywords",
+                "check-format",
+                "allow-leading-underscore"
+            ]
+        },
+        "class-name": {
+            "severity": "error"
+        },
+        "file-name-casing": [
+            true,
+            "pascal-case"
+        ],
+        "no-duplicate-imports": false,
+        "no-var-requires": false,
+        "no-require-imports": true,
+        "no-reference": true,
+        "no-inferrable-types": true,
+        "no-unnecessary-type-assertion": true,
+        "prefer-object-spread": true,
+        "object-literal-shorthand": true,
+        "prefer-template": true,
+        "quotemark": {
+            "options": [
+                "double",
+                "avoid-template",
+                "avoid-escape"
+            ],
+            "severity": "warning"
+        },
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "comment-format": [
+            false,
+            "check-space"
+        ],
+        "indent": [
+            false,
+            "spaces"
+        ],
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "no-var-keyword": true,
+        "semicolon": [
+            true,
+            "always",
+            "ignore-bound-class-methods"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-separator",
+            "check-type"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            },
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "onespace"
+            }
+        ],
+        "no-internal-module": true,
+        "no-trailing-whitespace": true,
+        "no-null-keyword": {
+            "severity": "off"
+        },
+        "prefer-const": true,
+        "jsdoc-format": true
+    },
+    "extends": [
+        "tslint:recommended"
+    ],
+    "naming-convention": [
+        true,
+        {
+            "type": "default",
+            "format": "strictCamelCase ",
+            "leadingUnderscore": "forbid",
+            "trailingUnderscore": "forbid"
+        },
+        {
+            "type": "variable",
+            "modifiers": [
+                "global",
+                "const"
+            ],
+            "format": [
+                "strictCamelCase ",
+                "UPPER_CASE"
+            ]
+        },
+        {
+            "type": "variable",
+            "modifiers": [
+                "export",
+                "const"
+            ],
+            "format": "strictCamelCase "
+        },
+        {
+            "type": "functionVariable",
+            "modifiers": [
+                "export",
+                "const"
+            ],
+            "format": "strictCamelCase "
+        },
+        {
+            "type": "parameter",
+            "modifiers": "unused",
+            "leadingUnderscore": "allow"
+        },
+        {
+            "type": "member",
+            "modifiers": "private",
+            "leadingUnderscore": "require"
+        },
+        {
+            "type": "member",
+            "modifiers": "protected",
+            "leadingUnderscore": "require"
+        },
+        {
+            "type": "method",
+            "filter": "^toJSON$",
+            "format": null
+        },
+        {
+            "type": "property",
+            "modifiers": [
+                "public",
+                "static",
+                "const"
+            ],
+            "format": "strictCamelCase "
+        },
+        {
+            "type": "type",
+            "format": "PascalCase"
+        },
+        {
+            "type": "class",
+            "modifiers": "abstract",
+            "prefix": "Abstract"
+        },
+        {
+            "type": "interface",
+            "prefix": "I"
+        },
+        {
+            "type": "genericTypeParameter",
+            "prefix": "T"
+        },
+        {
+            "type": "enumMember",
+            "format": "PascalCase"
+        }
+    ]
+}
