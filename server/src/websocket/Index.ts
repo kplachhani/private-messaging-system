@@ -1,15 +1,13 @@
 import { Server } from "http";
 import * as socketIO from "socket.io";
-import { authenticationHandler } from "./AuthencationHandler";
-import { connectHandler } from "./ConnectionHandler";
-import config from "../config/Index";
+import { connectHandler, authenticationHandler } from "./ConnectionHandler";
 
 
 let socket: socketIO.Server;
 
 const initWebSocket = (server: Server) => {
-    socket = socketIO.default(server);
-    socket.use(authenticationHandler).use(connectHandler);
+    socket = socketIO.default(server);  // initialization socket io and attached the server to the socket io instance
+    socket.use(authenticationHandler).use(connectHandler); // attach authentication and connection handler middleware to socket io instance
 };
 
 export {

@@ -1,11 +1,14 @@
 # ChatApp API
 
-# Server
+## Follow the below steps
 
-## Development server
+##   1. install the package dependencies
 
-Run `npm run start` for a dev server. Navigate to `http://localhost:8080/`. The api will automatically reload if you change any of the source files.
+Run `npm install` in the terminal to install all the package dependencies i.e nodemodules
 
-## Build
 
-Run `npm run build:webpack` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##  2. start server
+
+Run `npm run start` in the terminal for a development server to start.
+
+
