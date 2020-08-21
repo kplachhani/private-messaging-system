@@ -3,7 +3,12 @@ export const enum socketEventEnum {
     disconnected = "disconnect",
     emit = "emit",
     websocketMessage = "websocket_message",
-    notification = "feeds:notification",
-    notificationRead = "feeds:notification_read",
-    notificationUser = "feeds:notification_user"
+
+    activeUsers = "active_users",
+    listenMessage = "listen_room",
+    emitRoom = "emit_room",
+    joinRoom = "join_room",
+    leaveRoom = "leave_room",
+    activateE2ERoom = "activate_E2E",
+    triggerE2ERoom = "trigger_E2E",
 }

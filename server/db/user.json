@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "userName": "karthik",
+        "name": "Karthik Mani",
+        "imageUrl": "http://localhost:8080/images/kartik_dp.PNG",
+        "password": "1"
+    },
+    {
+        "id": "2",
+        "userName": "kiran",
+        "name": "Kiran Lachani",
+        "imageUrl": "http://localhost:8080/images/kiran_dp.PNG",
+        "password": "1"
+    },
+    {
+        "id": "2",
+        "userName": "shiv",
+        "name": "Shiv Tilva",
+        "imageUrl": "http://localhost:8080/images/user-profile.png",
+        "password": "1"
+    },
+    {
+        "id": "5",
+        "userName": "jhonT",
+        "name": "jhonathan",
+        "imageUrl": "http://localhost:8080/images/user-profile.png",
+        "password": "1"
+    }
+]

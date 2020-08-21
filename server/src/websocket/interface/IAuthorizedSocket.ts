@@ -7,5 +7,5 @@ export interface IAuthorizedSocket extends socketio.Socket {
 
 export interface ISocketUser {
     id: string;
-    email: string;
+    userName: string;
 }

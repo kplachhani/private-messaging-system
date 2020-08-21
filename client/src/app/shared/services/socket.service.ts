@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import SocketIOClient from 'socket.io-client';
 import { socketEventEnum } from 'src/app/constants/socket-event-enum';
+import { AccountService } from 'src/app/account/services/account.service';
 
 
 @Injectable({
@@ -16,10 +17,12 @@ export class SocketService {
   private socketUrl: string;
   private socketConfig: object;
 
-  constructor() { }
+  constructor(private authService: AccountService) { }
 
   private impersonateToken(): void {
-    this.token = 'tempToken'; // @** attach bearer token in header for socket Authorization.
+    this.authService.authUser.subscribe(
+      (res) => this.token = res.userName // @** attach bearer token in header for socket Authorization.
+    );
   }
 
 
